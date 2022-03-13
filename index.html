@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="portfolioStyles.css">
+
+    <title>Sandr3 Suarez Portfolio</title>
+
+</head>
+
+<body id="mainContainer">
+    <!--DONE--User Story #9: My portfolio should have at least one media query.-->
+    
+    <header>
+    <!--DONE-User Story #6: My portfolio should have a navbar with an id of navbar.-->
+    <!--DONE-User Story #11: The navbar should always be at the top of the viewport.-->
+    <!--DONE--User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.-->
+        <nav id="navbar"> 
+            <ul>
+                <li id="logoIcon"><a href="#welcome-section"><img src="LogoWhiteBlue.png"></a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#aboutMe">About</a>
+                <li><a href="#contactMe">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!--DONE-User Story #10: The height of the welcome section should be equal to the height of the viewport.-->
+    <!--DONE-User Story #1: My portfolio should have a welcome section with an id of welcome-section.-->
+    <div id="welcome-section">
+        <!--DONE-User Story #2: The welcome section should have an h1 element that contains text.-->
+        <img src="LogoWhiteBlue.png">
+        <h1>Sandra Su&#225rez</h1>
+        <p>Front end developer in progress.</p>
+        <p>Currently specializing in creating responsive static websites.</p>
+    </div>
+
+    <!--DONE-User Story #3: My portfolio should have a projects section with an id of projects.-->
+    <div id="projects">
+        <h1 class="pageTitle">Work</h1>
+        <!--DONE-User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.-->
+        <!--DONE-User Story #5: The projects section should contain at least one link to a project.-->
+        <div class="project-tile">
+            <a href="https://xandcoder.github.io/FCC-Tribute-Page/Salinas2.html" target="_blank"><img id="tributeFcc" src="TributePageThumbnail.jpg" alt="Free Code Camp Tribute Page Thumbnail"></a>
+            <p>FCC Tribute Page</p>
+        </div>
+
+        <div class="project-tile">
+            <a href="https://xandcoder.github.io/FCC-Survey-Page/survey.html" target="_blank"><img id="formFcc" src="SurveyPageThumbnail.jpg" alt="Free Code Camp Form Page Thumbnail"></a>
+            <p>FCC Form Page</p>
+        </div>
+
+        <div class="project-tile">
+            <a href="https://xandcoder.github.io/FCC-Technical-Doc-Page/index.html" target="_blank"><img id="technicalFcc" src="TechnicalDocPageThumbnail.jpg"alt="Free Code Camp Technical Document Page Thumbnail" ></a>
+            <p>FCC Technical Document Page</p>
+        </div>
+
+        <div class="project-tile">
+            <a href="https://xandcoder.github.io/FCC-Product-Landing-Page/index.html" target="_blank"><img id="landingFcc" src="LandingPageThumbnail.jpg" alt="Free Code Camp Landing Page Thumbnail"></a>        
+            <p>FCC Landing Page</p>
+        </div>            
+    </div>
+
+    <div id="aboutMe">
+        <h1 class="pageTitle">About Me</h1>
+        <div id="me">                
+            <p>Hi! I'm Sandra Su&#225rez, a self-taught web development student who recently completed the Free Code Camp Responsive Design course. My next step in this journey is Javascript.</p>
+
+            <p>I’m a seasoned professional with extensive experience communicating with all levels of an organization from customers to field employees to corporate. Always interested in solving problems, eliminating redundancy and creating efficient work procedures.</p>
+
+            <p>During my free time I'm an artist. I enjoy creating beautiful things with color. I belong to the Orlando Beginning Web Development group where we are currently working on non-profit projects.</p>
+        </div>
+
+        <h1 class="pageTitle">My Toolbox</h1>
+        <div id="tools">            
+            <img src="figmaIcon.png" alt="Figma Logo">
+            <img src="vscodeIcon.png" alt="VS Code Logo">
+            <img src="htmlIcon.png" alt="HTML5 image">
+            <img src="cssIcon.png" alt="CSS3 image">
+        </div>
+    </div>
+
+    <div id="contactMe">
+        <!--DONE-User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.-->
+        <h1 class="pageTitle">Contact Me</h1>
+        <p>Feel free to contact me if you have questions, want to discuss a project or just to want to say Hi!</p>
+        <div id="contacts">
+            <a href="mailto: xandcoder@gmail.com" ><img src="emailIconWhite.png" alt="email"></a>
+            <a href="https://discordapp.com/users/Xan#1673/" target="_blank"><img src="discordIcon.png" alt="Discord"></a>
+            <a href="https://codepen.io/XandCoder" target="_blank"><img src="codepenIcon.png" alt="Codepen"></a>
+            <a href="https://github.com/XandCoder" target="_blank"><img src="githubIcon.png" alt="Github"></a>
+        </div>
+    </div>
+
+    <!--FCC Test Script-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+</body>
+</html>

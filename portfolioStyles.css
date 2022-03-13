@@ -1,0 +1,217 @@
+/**********************************
+*
+* Author: Sandra Suarez AKA
+*		  XandCoder
+* Date: 03.09.22
+* FCC Portfolio
+*
+**********************************/
+
+/* Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Forum&family=Poppins:wght@300&display=swap');
+
+/* Forum - Heading */
+/* Poppins Light - Sub Heading */
+/* Cormorant Garamond - paragraph */
+
+
+/* Clear formatting  and Main Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Poppins Light', sans-serif;
+    background-color: #4e6468;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+/*TODO fix grid to 4 columns?*/
+/* Main Container */
+#mainContainer{
+    display: grid;
+    grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-auto-rows: minmax(100vh, auto);
+    grid-template-areas: 
+        ". welcome welcome welcome ."
+        ". projects projects projects ."
+        ". aboutMe aboutMe aboutMe ."
+        ". contactMe contactMe contactMe .";
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+
+/* Welcome page styles */
+#welcome-section{
+    grid-area: welcome;
+    display: grid;
+    grid-template-rows: 1fr .25fr .10fr 1.50fr;
+    justify-items: center;
+}
+#welcome-section img{    
+    width: 75px;
+    align-self: end;
+    padding-bottom: 5px;
+}
+#welcome-section h1{
+    font-family: 'Forum', sans-serif;
+    font-size: 45px;
+}
+#welcome-section p{
+    align-self: start;
+    text-align: center;
+    max-width: 300px;
+}
+
+
+.pageTitle{
+    font-family: 'Forum', sans-serif;
+    font-size: 1.75rem;
+    padding-top: 75px;
+    text-align: center;
+}
+
+
+/* Projects page styles */
+#projects{
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .4fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+.project-tile {
+    justify-self: center;
+    text-align: center;
+}
+.project-tile img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* About Me page styles */
+#aboutMe{
+    grid-area: aboutMe;
+    width: 100%;
+    min-height: 100vh; 
+    justify-items: center;
+}
+#aboutMe p{
+    font-family: 'Poppins Light', sans-serif;
+    padding-top: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+/*TODO Separate about and tools?*/
+#tools{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tools img{
+    height: 30px;
+    padding: 0 1.5rem;
+}
+
+
+/*Contact page styles */
+#contactMe{
+    grid-area: contactMe;
+    width: 100%;
+    min-height: 100vh; 
+    justify-content: space-evenly;
+}
+#contactMe p{
+    font-family: 'Poppins Light', sans-serif;
+    padding-top: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+/*TODO combine contacts and tools CSS?*/
+#contacts{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contacts img{
+    height: 30px;
+    padding: 0 1.5rem;
+}
+
+
+/* Navigation styles */
+header{
+    max-height: 80px;
+}
+#navbar {
+    position: fixed;
+    width: 100%;
+}
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#navbar li {
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 10px 20px;
+    list-style: none;
+    text-align: center;
+}
+#logoIcon img{
+    height: 20px;
+}
+#navbar a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media Query Laptop and Bigger styles 800px+ */
+@media only screen and (min-width: 769px) {
+    * {
+        background-color: pink;
+        font-size: 1.15rem;
+        /*TODO Update all font sizes?*/
+    }
+    #mainContainer{
+    max-width: 1440px;
+    /*TODO Do I need this?*/
+    grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+    grid-template-rows: repeat(4, 1fr 1fr .5fr .5fr);
+    grid-auto-rows: minmax(100vh, auto);
+    grid-template-areas: 
+        ". welcome welcome welcome ."
+        ". projects projects projects ."
+        ". aboutMe aboutMe aboutMe ."
+        ". contactMe contactMe contactMe .";
+    }
+    .pageTitle{
+        padding-top: 125px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    /*TODO Change work layout. */
+    #contacts img{
+    height: 50px;
+    padding: 0 1rem;
+    }
+    /*TODO Do I need this?*/
+    #navbar{
+        width: 100%;
+    }
+    #logoIcon img{
+    height: 25px;
+    }
+}
