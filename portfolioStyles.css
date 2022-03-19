@@ -2,7 +2,7 @@
 *
 * Author: Sandra Suarez AKA
 *		  XandCoder
-* Date: 03.19.22
+* Date: 03.09.22
 * FCC Portfolio
 *
 **********************************/
@@ -19,9 +19,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;  
-    font-family: 'Poppins Light', sans-serif;
-    background-color: #4e6468;
+    box-sizing: border-box;        
+}
+body{
+    background-color: #087e8b;
+    font-family: 'Poppins Light', sans-serif;   
     color: #ffffff;
     font-size: 1rem;
 }
@@ -49,6 +51,7 @@
     display: grid;
     grid-template-rows: 1fr .25fr .10fr 1.50fr;
     justify-items: center;
+    height: 100vh;
 }
 #welcome-section img{    
     width: 75px;
@@ -86,13 +89,26 @@
 }
 .project-tile {
     justify-self: center;
-    text-align: center;
+    background-color: #c2dace;
+    padding: 2rem;
+    border-radius: 1.5rem;
 }
 .project-tile img{
     width: 100%;
     max-width: 300px;
     height: auto;
     margin: 0 auto;
+}
+.project-tile-title{
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+.project-tile-text{
+    border-radius: .5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    max-width: 300px;
+    background-color: #087e8b;
 }
 
 
@@ -155,6 +171,7 @@ header{
 #navbar {
     position: fixed;
     width: 100%;
+    background-color: #087e8b;
 }
 #navbar ul {
     margin: 0;
