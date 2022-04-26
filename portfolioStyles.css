@@ -2,7 +2,7 @@
 *
 * Author: Sandra Suarez AKA
 *		  XandCoder
-* Date: 03.09.22
+* Date: 04.26.22
 * FCC Portfolio
 *
 **********************************/
@@ -29,12 +29,11 @@ body{
 }
 
 
-/*TODO fix grid to 4 columns?*/
 /* Main Container */
 #mainContainer{
     display: grid;
     grid-template-columns: .25fr 1fr 1fr .25fr;
-    grid-template-rows: 1fr 2fr 1fr .5fr;
+    grid-template-rows: 1fr 1fr 1fr .5fr;
     grid-template-areas: 
         ". welcome welcome ."
         ". projects projects ."
@@ -90,7 +89,6 @@ body{
     justify-self: center;
     border-radius: .4rem;
     box-shadow: 5px 5px 15px #2c2c2c;
-    /*min-height: 310px;*/
     font-size: 0.8rem;
 }
 .project-tile img{
@@ -147,7 +145,7 @@ body{
     max-width: 500px;
     margin: 0 auto;
 }
-/*TODO Separate about and tools?*/
+
 #tools{
     padding-top: 50px;
     display: flex;
@@ -173,7 +171,7 @@ body{
     max-width: 500px;
     margin: 0 auto;
 }
-/*TODO combine contacts and tools CSS?*/
+
 #contacts{
     padding-top: 50px;
     display: flex;
@@ -230,41 +228,40 @@ header{
 /* Media Query Laptop and Bigger styles 800px+ */
 @media (min-width: 769px) {
     body {
-        background-color: pink;
         font-size: 1.15rem;
-        /*TODO Update all font sizes?*/
     }
     #mainContainer{
     max-width: 1440px;
-    /*TODO Do I need this?
-    grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
-    grid-template-rows: repeat(4, 1fr 1fr .5fr .5fr);
-    grid-auto-rows: minmax(100vh, auto);
-    grid-template-areas: 
-        ". welcome welcome welcome ."
-        ". projects projects projects ."
-        ". aboutMe aboutMe aboutMe ."
-        ". contactMe contactMe contactMe .";
-    }*/
+    }
     .pageTitle{
         padding-top: 125px;
     }
     h1{
         font-size: 2rem;
     }
+    #projects {
+        grid-area: projects;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: .15fr .5fr .5fr;
+        gap: 40px;
+        width: 100%;
+        height: 100vh;
+    }
+    #workPageTitle{
+        padding-top: 65px;
+        grid-column: 1 / span 3;
+    }
     /*TODO Change work layout. */
     #contacts img{
     height: 50px;
     padding: 0 1rem;
     }
-    /*TODO Do I need this?*/
-    #navbar{
-        width: 100%;
-    }
     #logoIcon img{
     height: 25px;
     }
 }
+
 /*   Colors
 #ffffff white
 #e5ded2 sand
