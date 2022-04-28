@@ -252,7 +252,6 @@ header{
         padding-top: 65px;
         grid-column: 1 / span 3;
     }
-    /*TODO Change work layout. */
     #aboutMe {
         grid-area: aboutMe;
         display: grid;
