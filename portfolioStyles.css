@@ -2,7 +2,7 @@
 *
 * Author: Sandra Suarez AKA
 *		  XandCoder
-* Date: 04.26.22
+* Date: 04.28.22
 * FCC Portfolio
 *
 **********************************/
@@ -12,7 +12,7 @@
 
 /* Forum - Heading */
 /* Poppins Light - Sub Heading */
-/* Cormorant Garamond - paragraph */
+/* Cormorant Garamond - paragraph - decided not to use */
 
 
 /* Clear formatting  and Main Styles*/
@@ -249,7 +249,7 @@ header{
         height: 100vh;
     }
     #workPageTitle{
-        padding-top: 65px;
+        padding-top: 70px;
         grid-column: 1 / span 3;
     }
     #aboutMe {
@@ -274,12 +274,3 @@ header{
     height: 25px;
     }
 }
-
-/*   Colors
-#ffffff white
-#e5ded2 sand
-#c2dace seafoam
-#ezb9b4 peach pink
-#087e8b tropical blue
-#2c2c2c dark brown
-*/
