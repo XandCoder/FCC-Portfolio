@@ -33,7 +33,7 @@ body{
 #mainContainer{
     display: grid;
     grid-template-columns: .25fr 1fr 1fr .25fr;
-    grid-template-rows: 1fr 1fr 1fr .5fr;
+    grid-template-rows: 1fr 1.10fr 1fr .5fr;
     grid-template-areas: 
         ". welcome welcome ."
         ". projects projects ."
@@ -249,7 +249,7 @@ header{
         height: 100vh;
     }
     #workPageTitle{
-        padding-top: 70px;
+        padding-top: 65px;
         grid-column: 1 / span 3;
     }
     #aboutMe {
